@@ -1,6 +1,6 @@
-# Graph Skills
+# Graph skills
 
-A collection of Claude Skills for Knowledge Graph construction and GraphRAG workflows.
+A collection of Claude skills for knowledge graph construction and graphRAG workflows.
 
 ## Skills
 
