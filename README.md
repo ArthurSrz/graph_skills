@@ -9,9 +9,9 @@ A collection of Claude skills for knowledge graph construction and graphRAG work
 Integration pattern for connecting a domain graph (structured, from CSV) to a lexical graph (automatically extracted from unstructured documents via LLM).
 
 **Use cases:**
-- GraphRAG architectures
+- graphRAG architectures
 - PDF ingestion with metadata
-- Building Knowledge Graphs from heterogeneous sources
+- building Knowledge Graphs from heterogeneous sources
 - neo4j-graphrag and SimpleKGPipeline workflows
 
 ## Installation
