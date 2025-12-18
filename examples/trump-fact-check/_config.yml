@@ -1,0 +1,35 @@
+# Jekyll configuration for GitHub Pages
+title: "Trump Interview Fact-Check"
+description: "Knowledge Graph Analysis of Trump's Politico Interview (December 8, 2025)"
+baseurl: "/graph_skills/examples/trump-fact-check"
+url: ""
+
+# Theme
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Exclude from build
+exclude:
+  - generate_report.py
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - "*.py"
+
+# Social
+twitter_username: ""
+github_username: ""
+
+# Analytics (optional)
+# google_analytics: UA-XXXXXXXX-X

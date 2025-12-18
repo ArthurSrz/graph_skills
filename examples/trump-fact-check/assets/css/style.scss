@@ -1,0 +1,300 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Data Journalism Theme */
+:root {
+  --verdict-false: #E74C3C;
+  --verdict-true: #27AE60;
+  --verdict-exag: #F39C12;
+  --verdict-partial: #3498DB;
+  --bg-light: #FAFAFA;
+  --text-dark: #2C3E50;
+  --accent: #1ABC9C;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.7;
+  color: var(--text-dark);
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.page-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin: -2rem -2rem 3rem -2rem;
+  border-radius: 0 0 12px 12px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  letter-spacing: -1px;
+}
+
+.hero .subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* Verdict Badges */
+.verdict-badge {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.verdict-false { background-color: var(--verdict-false); }
+.verdict-true { background-color: var(--verdict-true); }
+.verdict-exag { background-color: var(--verdict-exag); }
+.verdict-partial { background-color: var(--verdict-partial); }
+
+/* Claim Cards */
+.claim-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  margin: 3rem 0;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.claim-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #f0f0f0;
+  background: var(--bg-light);
+}
+
+.claim-quote {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  border-left: 5px solid var(--verdict-false);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background: var(--bg-light);
+  border-radius: 0 8px 8px 0;
+  line-height: 1.6;
+}
+
+.claim-content {
+  padding: 2rem;
+}
+
+/* Data Tables */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.data-table th {
+  background: var(--text-dark);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.data-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.data-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.highlight-row {
+  background: #FFF8E1 !important;
+}
+
+/* Graph Containers */
+.graph-container {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: var(--bg-light);
+  border-radius: 8px;
+}
+
+.graph-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Summary Grid */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.summary-box {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.summary-box .number {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1;
+}
+
+.summary-box .label {
+  font-size: 0.85rem;
+  opacity: 0.95;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Source Links */
+.source-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.source-link:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* Methodology Section */
+.methodology {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 2.5rem;
+  border-radius: 12px;
+  margin: 3rem 0;
+  border-left: 5px solid var(--accent);
+}
+
+.methodology h2 {
+  color: var(--accent);
+  margin-top: 0;
+}
+
+.methodology h3 {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .claim-card {
+    margin: 2rem -1rem;
+    border-radius: 0;
+  }
+
+  .claim-content {
+    padding: 1rem;
+  }
+
+  .data-table {
+    font-size: 0.9rem;
+  }
+
+  .data-table th, .data-table td {
+    padding: 0.6rem;
+  }
+}
+
+/* Blockquotes */
+blockquote {
+  margin: 1.5rem 0;
+  padding: 0;
+  border: none;
+}
+
+/* Section Dividers */
+hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  margin: 3rem 0;
+}
+
+/* Tables in Markdown */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+table th {
+  background: var(--text-dark);
+  color: white;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+table td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+table tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+/* Code blocks */
+code {
+  background: #f4f4f4;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
