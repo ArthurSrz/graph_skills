@@ -4,6 +4,16 @@ A collection of Claude skills for knowledge graph construction and graphRAG work
 
 ## Skills
 
+### wikidata
+
+MCP server and Claude skill for querying Wikidata's knowledge graph — entity lookup, relationship exploration, and custom SPARQL queries.
+
+**Use cases:**
+- Factual queries about real-world entities (people, places, organizations, concepts)
+- Knowledge graph exploration via Wikidata's 100M+ items
+- SPARQL queries against the Wikidata endpoint
+- Cross-language entity lookup and property traversal
+
 ### pont-de-londres
 
 Integration pattern for connecting a domain graph (structured, from CSV) to a lexical graph (automatically extracted from unstructured documents via LLM).
