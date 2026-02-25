@@ -28,7 +28,7 @@ Integration pattern for connecting a domain graph (structured, from CSV) to a le
 
 ### Claude.ai / Claude App
 
-1. Download the `pont-de-londres.zip` file from this repo
+1. Download the skill zip file from this repo (`wikidata.zip` or `pont-de-londres.zip`)
 2. Go to **Settings > Capabilities > Skills**
 3. Click **Upload skill** and select the ZIP file
 
