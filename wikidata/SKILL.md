@@ -5,13 +5,14 @@ description: Query Wikidata's knowledge graph for factual information, entity lo
 
 # Wikidata MCP Skill
 
-## Status
+## Setup
 
-The MCP server is **installed and configured** for both Claude Code and Claude Desktop.
+The MCP server must be installed and running for this skill to work.
 
-- **Server path**: `/Users/arthursarazin/.claude/local_mcp/mcp-wikidata/`
-- **User-Agent**: pre-configured (`MCP-Wikidata/0.1.0 (https://github.com/ArthurSrz/mcp-wikidata; arthur.sarazin@gmail.com)`)
-- No manual setup required.
+1. Unzip the skill and place the `server/` folder wherever you prefer
+2. Run `uv sync` inside `server/` to install dependencies
+3. Add the server to your Claude config (see `server/CONFIGURATION.md` for options)
+4. Set your `WIKIDATA_USER_AGENT` env variable (e.g. `MCP-Wikidata/0.1.0 (your@email.com)`)
 
 ## When to Use This Skill
 
